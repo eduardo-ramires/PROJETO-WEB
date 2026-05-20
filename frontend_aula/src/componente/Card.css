@@ -1,0 +1,67 @@
+.cartao {
+  background-color: var(--mc-white);
+  border-radius: var(--mc-radius);
+  box-shadow: var(--mc-shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-top: 4px solid var(--mc-yellow);
+}
+
+.cartao:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+.cartao img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cartao-conteudo {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.cartao-conteudo h2 {
+  font-size: 1.15rem;
+  color: var(--mc-dark);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.cartao-conteudo p {
+  font-size: 0.9rem;
+  color: var(--mc-gray);
+  line-height: 1.5;
+}
+
+.cartao-conteudo p strong {
+  color: var(--mc-dark);
+}
+
+/* Preço */
+.cartao-conteudo p:has(strong:first-child) + p,
+.cartao-conteudo p:nth-child(4) {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--mc-red);
+}
+
+/* Linha do preço */
+.cartao-conteudo p:nth-child(4) strong {
+  color: var(--mc-red);
+}
+
+/* Status badge */
+.cartao-conteudo p:last-child {
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+  font-weight: 600;
+}

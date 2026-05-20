@@ -1,0 +1,52 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container h1 {
+  background-color: var(--mc-red);
+  color: var(--mc-yellow);
+  text-align: center;
+  padding: 32px 24px;
+  font-size: 2.4rem;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  margin: 0;
+  box-shadow: 0 4px 12px rgba(218, 41, 28, 0.35);
+}
+
+.grade-cartoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 28px;
+  padding: 40px 32px;
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.mensagem-erro {
+  background-color: #fff0f0;
+  color: var(--mc-red);
+  border: 1.5px solid var(--mc-red);
+  border-radius: var(--mc-radius);
+  padding: 16px 24px;
+  margin: 32px auto;
+  max-width: 600px;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container h1 {
+    font-size: 1.6rem;
+    padding: 24px 16px;
+  }
+
+  .grade-cartoes {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+    padding: 24px 16px;
+  }
+}

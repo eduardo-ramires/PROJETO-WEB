@@ -1,0 +1,48 @@
+:root {
+  --mc-red: #DA291C;
+  --mc-yellow: #FFC72C;
+  --mc-dark: #27251F;
+  --mc-cream: #FFF8E7;
+  --mc-gray: #6B6B6B;
+  --mc-light-gray: #F5F5F5;
+  --mc-white: #FFFFFF;
+  --mc-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  --mc-radius: 12px;
+
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  font-size: 16px;
+  color: var(--mc-dark);
+  background-color: var(--mc-cream);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--mc-cream);
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: 700;
+  color: var(--mc-dark);
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
